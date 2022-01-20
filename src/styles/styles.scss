@@ -1,0 +1,58 @@
+@import 'variables';
+@import 'strategy_carousel';
+
+$theme-colors: (
+  'primary': $secondaryColor,
+);
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header {
+  height: 15vh;
+  background: url('../../public/ti-background.jpeg') no-repeat fixed;
+  background-size: 100% 100%;
+  font-size: calc(10px + 5vmin);
+  font-family: 'CopperPlate';
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  color: $secondaryColor;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.Footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: $textColor;
+  font-size: 12px;
+  a {
+    color: $secondaryColor;
+  }
+  a:hover {
+    color: darken($textColor, 20);
+  }
+}
+
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  background: #282c34;
+  color: $textColor;
+}
