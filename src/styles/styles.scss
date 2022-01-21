@@ -14,7 +14,7 @@ $theme-colors: (
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 3vh;
+  margin-bottom: 5vh;
 }
 
 .Header {
@@ -30,6 +30,8 @@ $theme-colors: (
   text-align: center;
   align-items: center;
   justify-content: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black,
+    0px 0px 15px darken($secondaryColor, 30);
 }
 
 .Footer {
@@ -41,6 +43,7 @@ $theme-colors: (
   background-color: $backgroundColor;
   padding-top: 5px;
   text-align: center;
+  box-shadow: 0 0 15px 15px $backgroundColor;
   a {
     color: $primaryColor;
   }
@@ -54,13 +57,11 @@ $theme-colors: (
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-* {
-  color: $textColor;
+  box-shadow: 0 0 6px 2px $secondaryColor;
 }
 
 body {
+  color: $textColor;
   min-height: 100vh;
   display: flex;
   align-items: stretch;

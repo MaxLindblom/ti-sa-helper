@@ -13,14 +13,14 @@ function App() {
   return (
     <>
       <Header />
+      <Navbar className="navbar-container" bg="primary">
+        <Nav>
+          <Nav.Link href="home">Home</Nav.Link>
+          <Nav.Link href="strategy">Strategy Cards</Nav.Link>
+          <Nav.Link href="races">Race Sheets</Nav.Link>
+        </Nav>
+      </Navbar>
       <div className="App">
-        <Navbar className="navbar-container" bg="primary" variant="light">
-          <Nav>
-            <Nav.Link href="home">Home</Nav.Link>
-            <Nav.Link href="strategy">Strategy Cards</Nav.Link>
-            <Nav.Link href="races">Race Sheets</Nav.Link>
-          </Nav>
-        </Navbar>
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/strategy" element={<Strategy />} />
