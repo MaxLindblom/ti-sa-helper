@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin: 18px 8px 5px;
 }
 
 .portrait-img {
@@ -12,6 +13,7 @@
   margin: 5px;
   cursor: pointer;
   img {
+    box-shadow: 0 0 5px $primaryColor;
     width: 120px;
     height: 120px;
   }

@@ -1,7 +1,17 @@
+@import 'variables';
+
 .carousel-container {
   padding: 2vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  button {
+    height: 25vh;
+    width: 28vh;
+    border: 4px solid $secondaryColor;
+
+    background-image: url('../../public/StrategyCardsIcon.jpg');
+    background-size: cover;
+  }
 }

@@ -3,7 +3,7 @@
 @import 'images';
 
 $theme-colors: (
-  'primary': $secondaryColor,
+  'primary': $primaryColor,
 );
 
 @import '../../node_modules/bootstrap/scss/bootstrap';
@@ -26,7 +26,7 @@ $theme-colors: (
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  color: $secondaryColor;
+  color: $primaryColor;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -42,7 +42,7 @@ $theme-colors: (
   padding-top: 5px;
   text-align: center;
   a {
-    color: $secondaryColor;
+    color: $primaryColor;
   }
   a:hover {
     color: darken($textColor, 20);
@@ -63,4 +63,5 @@ $theme-colors: (
 body {
   min-height: 100vh;
   display: flex;
+  align-items: stretch;
 }

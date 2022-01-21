@@ -22,9 +22,7 @@ function StrategyCarousel() {
 
   return (
     <div className="carousel-container">
-      <Button variant="primary" size="lg" onClick={handleShow}>
-        Strategy Cards
-      </Button>
+      <Button variant="primary" size="lg" onClick={handleShow}></Button>
       <Modal show={show} centered onHide={handleClose}>
         <Carousel fade interval={null}>
           {cardImages.map((value, index) => {
