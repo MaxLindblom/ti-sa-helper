@@ -11154,6 +11154,7 @@ fieldset:disabled .btn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 3vh;
 }
 
 .Header {
@@ -11181,14 +11182,14 @@ fieldset:disabled .btn {
 }
 
 .Footer {
-  position: auto;
-  display: block;
-  left: 0;
+  position: fixed;
   bottom: 0;
   width: 100%;
-  color: #d4eaf0;
+  height: 3vh;
   font-size: 12px;
-  padding-top: 8px;
+  background-color: #282c34;
+  padding-top: 5px;
+  text-align: center;
 }
 
 .Footer a {
@@ -11214,4 +11215,11 @@ fieldset:disabled .btn {
 
 * {
   color: #d4eaf0;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

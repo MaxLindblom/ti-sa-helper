@@ -14,6 +14,7 @@ $theme-colors: (
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 3vh;
 }
 
 .Header {
@@ -32,14 +33,14 @@ $theme-colors: (
 }
 
 .Footer {
-  position: auto;
-  display: block;
-  left: 0;
+  position: fixed;
   bottom: 0;
   width: 100%;
-  color: $textColor;
+  height: 3vh;
   font-size: 12px;
-  padding-top: 8px;
+  background-color: $backgroundColor;
+  padding-top: 5px;
+  text-align: center;
   a {
     color: $secondaryColor;
   }
@@ -57,4 +58,9 @@ $theme-colors: (
 
 * {
   color: $textColor;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
 }
