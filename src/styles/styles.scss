@@ -65,3 +65,16 @@ body {
   display: flex;
   align-items: stretch;
 }
+
+.home-div {
+  display: flex;
+  flex-direction: column;
+  width: 88%;
+  padding: 10px;
+  a {
+    color: $primaryColor;
+  }
+  a:hover {
+    color: darken($textColor, 20);
+  }
+}

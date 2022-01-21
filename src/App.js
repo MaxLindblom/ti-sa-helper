@@ -6,6 +6,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 import { Routes, Route } from 'react-router-dom';
 import Strategy from './routes/Strategy';
 import Races from './routes/Races';
+import Home from './routes/Home';
 
 function App() {
   document.body.style.background = '#282c34';
@@ -21,6 +22,7 @@ function App() {
           </Nav>
         </Navbar>
         <Routes>
+          <Route path="/home" element={<Home />} />
           <Route path="/strategy" element={<Strategy />} />
           <Route path="/races" element={<Races />} />
         </Routes>

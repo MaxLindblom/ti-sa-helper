@@ -11237,3 +11237,23 @@ body {
       -ms-flex-align: stretch;
           align-items: stretch;
 }
+
+.home-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 88%;
+  padding: 10px;
+}
+
+.home-div a {
+  color: #eecf46;
+}
+
+.home-div a:hover {
+  color: #88c5d6;
+}
