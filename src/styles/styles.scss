@@ -30,8 +30,8 @@ $theme-colors: (
   text-align: center;
   align-items: center;
   justify-content: center;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black,
-    0px 0px 15px darken($secondaryColor, 30);
+  text-shadow: -1px 0 3px #64420a, 0 1px 3px #64420a, 1px 0 3px #64420a,
+    0 -1px 3px #64420a, 0px 0px 10px black;
 }
 
 .Footer {
@@ -57,7 +57,7 @@ $theme-colors: (
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 6px 2px $secondaryColor;
+  box-shadow: 0 0 6px $secondaryColor;
 }
 
 body {

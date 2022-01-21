@@ -11191,7 +11191,7 @@ fieldset:disabled .btn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 0px 0px 15px #483c07;
+  text-shadow: -1px 0 3px #64420a, 0 1px 3px #64420a, 1px 0 3px #64420a, 0 -1px 3px #64420a, 0px 0px 10px black;
 }
 
 .Footer {
@@ -11226,8 +11226,8 @@ fieldset:disabled .btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0 0 6px 2px #d4b013;
-          box-shadow: 0 0 6px 2px #d4b013;
+  -webkit-box-shadow: 0 0 6px #d4b013;
+          box-shadow: 0 0 6px #d4b013;
 }
 
 body {
