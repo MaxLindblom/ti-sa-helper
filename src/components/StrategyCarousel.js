@@ -5,20 +5,21 @@ import Modal from 'react-bootstrap/Modal';
 
 function StrategyCarousel() {
   const cardImages = [
-    '../../xLeadership.jpg',
-    '../../xDiplomacy.jpg',
-    '../../xAssemblyTC.jpg',
-    '../../xProduction.jpg',
-    '../../xTrade.jpg',
-    '../../xWarfare.jpg',
-    '../../xTechnology.jpg',
-    '../../xBureaucracy.jpg',
-    '../../xProspect.jpg',
+    '../../strategy-cards/xLeadership.jpg',
+    '../../strategy-cards/xDiplomacy.jpg',
+    '../../strategy-cards/xAssemblyTC.jpg',
+    '../../strategy-cards/xProduction.jpg',
+    '../../strategy-cards/xTrade.jpg',
+    '../../strategy-cards/xWarfare.jpg',
+    '../../strategy-cards/xTechnology.jpg',
+    '../../strategy-cards/xBureaucracy.jpg',
+    '../../strategy-cards/xProspect.jpg',
   ];
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
   return (
     <div className="carousel-container">
       <Button variant="primary" size="lg" onClick={handleShow}>
