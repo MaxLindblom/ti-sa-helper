@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'strategy_carousel';
+@import 'images';
 
 $theme-colors: (
   'primary': $secondaryColor,
@@ -31,12 +32,14 @@ $theme-colors: (
 }
 
 .Footer {
-  position: fixed;
+  position: auto;
+  display: block;
   left: 0;
   bottom: 0;
   width: 100%;
   color: $textColor;
   font-size: 12px;
+  padding-top: 8px;
   a {
     color: $secondaryColor;
   }
@@ -52,7 +55,6 @@ $theme-colors: (
   align-items: center;
 }
 
-html {
-  background: #282c34;
+* {
   color: $textColor;
 }
