@@ -2,19 +2,9 @@ import { React, useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import { cardImages } from '../constants';
 
 function StrategyCarousel() {
-  const cardImages = [
-    '../../strategy-cards/xLeadership.jpg',
-    '../../strategy-cards/xDiplomacy.jpg',
-    '../../strategy-cards/xAssemblyTC.jpg',
-    '../../strategy-cards/xProduction.jpg',
-    '../../strategy-cards/xTrade.jpg',
-    '../../strategy-cards/xWarfare.jpg',
-    '../../strategy-cards/xTechnology.jpg',
-    '../../strategy-cards/xBureaucracy.jpg',
-    '../../strategy-cards/xProspect.jpg',
-  ];
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -33,7 +23,6 @@ function StrategyCarousel() {
             );
           })}
         </Carousel>
-        <Modal.Body></Modal.Body>
       </Modal>
     </div>
   );

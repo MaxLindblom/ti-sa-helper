@@ -1,28 +1,9 @@
 import { React, useState } from 'react';
 import Image from 'react-bootstrap/Image';
 import Modal from 'react-bootstrap/Modal';
+import { races } from '../constants';
 
 function RaceGallery() {
-  const races = [
-    'Arborec',
-    'Creuss',
-    'Hacan',
-    'Jol-Nar',
-    'Krotoan',
-    'Letnev',
-    'Lizix',
-    'Mentak',
-    'Muaat',
-    'Naalu',
-    'Saar',
-    'Sardakk',
-    'Sol',
-    'Winnu',
-    'Xxcha',
-    'Yin',
-    'Yssaril',
-  ];
-
   return (
     <div className="portrait-container">
       {races.map((value) => {
