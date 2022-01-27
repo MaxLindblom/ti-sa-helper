@@ -7,6 +7,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Strategy from './routes/Strategy';
 import Races from './routes/Races';
 import Home from './routes/Home';
+import Combat from './routes/Combat';
 
 function App() {
   document.body.style.background = '#282c34';
@@ -19,6 +20,7 @@ function App() {
             <Nav.Link href="home">Home</Nav.Link>
             <Nav.Link href="strategy">Strategy Cards</Nav.Link>
             <Nav.Link href="races">Race Sheets</Nav.Link>
+            <Nav.Link href="combat">Combat</Nav.Link>
           </Nav>
         </Navbar>
         <Routes>
@@ -26,6 +28,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/strategy" element={<Strategy />} />
           <Route path="/races" element={<Races />} />
+          <Route path="/combat" element={<Combat />} />
         </Routes>
       </div>
       <Footer />

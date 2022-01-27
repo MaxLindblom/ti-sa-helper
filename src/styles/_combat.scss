@@ -1,0 +1,50 @@
+.counter-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 5% 0;
+}
+
+.combat-counter {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  height: $counterRowHeight;
+  .button-container {
+    display: flex;
+    justify-content: center;
+    .counter-output {
+      min-width: 1.8rem;
+      align-self: center;
+    }
+  }
+  .unit-name {
+    flex-shrink: 0;
+    align-self: center;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+}
+
+.span-container {
+  height: $counterRowHeight;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.control-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.calculator-container {
+  padding-bottom: 7%;
+}
