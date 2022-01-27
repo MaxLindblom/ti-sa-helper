@@ -44,4 +44,204 @@ const unitTypes = [
   'Shock troop',
 ];
 
+const techColors = {
+  red: 'red',
+  yellow: 'yellow',
+  green: 'green',
+  blue: 'blue',
+};
+
+const techs = [
+  {
+    name: 'Enviro Compensator',
+    color: techColors.yellow,
+    requires: [],
+    requiresAll: false,
+  },
+  {
+    name: 'Transfabrication',
+    color: techColors.yellow,
+    requires: [],
+    requiresAll: false,
+  },
+  {
+    name: 'Hylar V Laser',
+    color: techColors.red,
+    requires: [],
+    requiresAll: false,
+  },
+  {
+    name: 'Impulsion Shields',
+    color: techColors.red,
+    requires: [],
+    requiresAll: false,
+  },
+  {
+    name: 'Antimass Deflectors',
+    color: techColors.blue,
+    requires: [],
+    requiresAll: false,
+  },
+  {
+    name: 'Ion Drive',
+    color: techColors.blue,
+    requires: [],
+    requiresAll: false,
+  },
+  {
+    name: 'Stasis Capsules',
+    color: techColors.green,
+    requires: ['Enviro Compensator', 'Transfabrication'],
+    requiresAll: false,
+  },
+  {
+    name: 'Sarween Tools',
+    color: techColors.yellow,
+    requires: ['Enviro Compensator', 'Transfabrication'],
+    requiresAll: false,
+  },
+  {
+    name: 'Automated Turrets',
+    color: techColors.red,
+    requires: ['Hylar V Laser', 'Impulsion Shields'],
+    requiresAll: false,
+  },
+  {
+    name: 'Deep Space Cannon',
+    color: techColors.red,
+    requires: ['Hylar V Laser', 'Impulsion Shields'],
+    requiresAll: false,
+  },
+  {
+    name: 'XRD Transporters',
+    color: techColors.blue,
+    requires: ['Antimass Deflectors', 'Ion Drive'],
+    requiresAll: false,
+  },
+  {
+    name: 'Cybernetics',
+    color: techColors.green,
+    requires: ['Antimass Deflectors', 'Ion Drive', 'Stasis Capsules'],
+    requiresAll: false,
+  },
+  {
+    name: 'Micro Technology',
+    color: techColors.yellow,
+    requires: ['Stasis Capsules', 'Sarween Tools'],
+    requiresAll: false,
+  },
+  {
+    name: 'War Sun',
+    color: techColors.red,
+    requires: ['Sarween Tools', 'Deep Space Cannon'],
+    requiresAll: true,
+  },
+  {
+    name: 'Magen Defense Grid',
+    color: techColors.red,
+    requires: ['Deep Space Cannon'],
+    requiresAll: true,
+  },
+  {
+    name: 'Maneuvering Jets',
+    color: techColors.blue,
+    requires: ['XRD Transporters', 'Ion Drive'],
+    requiresAll: false,
+  },
+  {
+    name: 'Neural Motivator',
+    color: techColors.green,
+    requires: ['Stasis Capsules', 'Micro Technology'],
+    requiresAll: false,
+  },
+  {
+    name: 'Nano Robotics',
+    color: techColors.yellow,
+    requires: ['Micro Technology'],
+    requiresAll: true,
+  },
+  {
+    name: 'Graviton Laser System',
+    color: techColors.yellow,
+    requires: ['Deep Space Cannon'],
+    requiresAll: true,
+  },
+  {
+    name: 'Light Wave Deflectors',
+    color: techColors.blue,
+    requires: ['Magen Defense Grid', 'XRD Transporters'],
+    requiresAll: true,
+  },
+  {
+    name: 'Gen Synthesis',
+    color: techColors.green,
+    requires: ['Cybernetics'],
+    requiresAll: true,
+  },
+  {
+    name: 'Integrated Economy',
+    color: techColors.yellow,
+    requires: ['Cybernetics', 'Micro Technology'],
+    requiresAll: true,
+  },
+  {
+    name: 'Dacxive Animators',
+    color: techColors.green,
+    requires: ['Neural Motivator'],
+    requiresAll: true,
+  },
+  {
+    name: 'Assault Cannons',
+    color: techColors.red,
+    requires: ['Automated Turrets', 'Cybernetics'],
+    requiresAll: true,
+  },
+  {
+    name: 'Hyper Metabolism',
+    color: techColors.green,
+    requires: ['Gen Synthesis'],
+    requiresAll: true,
+  },
+  {
+    name: 'Graviton Negator',
+    color: techColors.red,
+    requires: ['Dacxive Animators', 'Assault Cannons'],
+    requiresAll: false,
+  },
+  {
+    name: 'Type IV Drive',
+    color: techColors.blue,
+    requires: ['Neural Motivator', 'XRD Transporters'],
+    requiresAll: true,
+  },
+  {
+    name: 'Transit Diodes',
+    color: techColors.yellow,
+    requires: [
+      'Light Wave Deflectors',
+      'Hyper Metabolism',
+      'Dacxive Animators',
+    ],
+    requiresAll: false,
+  },
+  {
+    name: 'Fleet Logistics',
+    color: techColors.blue,
+    requires: ['Graviton Negator'],
+    requiresAll: true,
+  },
+  {
+    name: 'Advanced Fighters',
+    color: techColors.blue,
+    requires: ['Type IV Drive'],
+    requiresAll: true,
+  },
+  {
+    name: 'X-89 Bacterial Weapon',
+    color: techColors.green,
+    requires: ['Assault Cannons', 'Transit Nodes'],
+    requiresAll: false,
+  },
+];
+
 export { races, cardImages, unitTypes };
