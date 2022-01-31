@@ -244,4 +244,4 @@ const techs = [
   },
 ];
 
-export { races, cardImages, unitTypes };
+export { races, cardImages, unitTypes, techs };
