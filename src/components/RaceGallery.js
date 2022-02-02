@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import Image from 'react-bootstrap/Image';
 import Modal from 'react-bootstrap/Modal';
-import { races } from '../constants';
+import { races } from '../util/constants';
 
 function RaceGallery() {
   return (

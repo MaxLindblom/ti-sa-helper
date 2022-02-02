@@ -2,7 +2,7 @@ import { React, useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import { cardImages } from '../constants';
+import { cardImages } from '../util/constants';
 
 function StrategyCarousel() {
   const [show, setShow] = useState(false);

@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import { unitTypes } from '../constants';
+import { unitTypes } from '../util/constants';
 import Counter from './Counter';
 import Button from 'react-bootstrap/Button';
 
