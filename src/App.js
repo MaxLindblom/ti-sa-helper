@@ -8,12 +8,13 @@ import Strategy from './routes/Strategy';
 import Races from './routes/Races';
 import Home from './routes/Home';
 import Combat from './routes/Combat';
+import Tech from './routes/Tech';
 
 function App() {
   document.body.style.background = '#282c34';
   return (
     <>
-      <div className="App">
+      <div className="App" lang="en">
         <Header />
         <Navbar className="navbar-container" bg="primary">
           <Nav>
@@ -21,6 +22,7 @@ function App() {
             <Nav.Link href="strategy">Strategy Cards</Nav.Link>
             <Nav.Link href="races">Race Sheets</Nav.Link>
             <Nav.Link href="combat">Combat</Nav.Link>
+            <Nav.Link href="tech">Tech</Nav.Link>
           </Nav>
         </Navbar>
         <Routes>
@@ -29,6 +31,7 @@ function App() {
           <Route path="/strategy" element={<Strategy />} />
           <Route path="/races" element={<Races />} />
           <Route path="/combat" element={<Combat />} />
+          <Route path="/tech" element={<Tech />} />
         </Routes>
       </div>
       <Footer />

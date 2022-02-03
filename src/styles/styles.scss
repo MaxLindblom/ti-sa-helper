@@ -2,6 +2,7 @@
 @import 'strategy_carousel';
 @import 'images';
 @import 'combat';
+@import 'tech';
 
 $theme-colors: (
   'primary': $primaryColor,
@@ -77,4 +78,12 @@ body {
   a:hover {
     color: darken($textColor, 20);
   }
+}
+
+.modal-body {
+  background-color: $backgroundColor;
+}
+
+.modal-title {
+  background-color: $backgroundColor;
 }
